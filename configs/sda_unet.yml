@@ -1,0 +1,17 @@
+embedding_dim: 512
+hidden_blocks:
+- 3
+- 3
+- 3
+- 3
+- 3
+hidden_channels:
+- 128
+- 128
+- 256
+- 384
+- 512
+kernel_size: 3
+padding_mode: zeros
+attention_levels:
+- 4

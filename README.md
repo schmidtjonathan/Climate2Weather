@@ -5,7 +5,7 @@ Wouldn't it be nice, if you could...
 This code accompanies the paper "Spatiotemporally Coherent Probabilistic Generation of Weather from Climate" (link to pre-print follows soon).
 
 <p align="center">
-  <img src="./assets/vas_big_grid.png" width="75%" />
+  <img src="./assets/vas_storm.png" width="75%" />
 </p>
 
 This repository contains the code to reproduce the results of the paper.

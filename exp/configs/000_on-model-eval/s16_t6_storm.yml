@@ -1,0 +1,27 @@
+model_path: /path/to/network-snapshot-0186646-0.999900.pkl
+data_path: /path/to/COSMO/test2014-2018/data/allvars/merged-allvars.nc
+quantile_path: /path/to/COSMO/train2006-2013/stats/allvars/merged-allvars_quantiles.nc
+start_time: 2018-01-17-02
+num_hours: 121
+data_norm_mode: quant95
+observation_path: /path/to/COSMO/test2014-2018/data/allvars/merged-allvars.nc
+data_vars:
+- psl
+- tas
+- uas
+- vas
+num_sampling_steps: 256
+num_samples: 50
+num_corrections: 0
+likelihood_gamma: 0.0007196856730011522
+likelihood_std:
+- 0.1692666615037876
+- 0.0425178630338289
+- 0.3268027589410125
+- 0.3268027589410125
+correction_tau: 0.5
+seed: 0
+t_step: 6
+s_step: 16
+batch_size: 32
+use_exact_grad: false

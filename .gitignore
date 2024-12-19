@@ -19,7 +19,7 @@ wandb/
 *.pth
 *.ckpt
 *.html
-*.png
+# *.png
 *.jpg
 *.gif
 

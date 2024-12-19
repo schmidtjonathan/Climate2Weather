@@ -11,6 +11,12 @@ This code accompanies the paper "Spatiotemporally Coherent Probabilistic Generat
 This repository contains the code to reproduce the results of the paper.
 More information follows soon...
 
+
+## Disclaimer
+> December 19, 2024
+
+I am currently in the process of testing the code base on different platforms and in different environments. Should you encounter problems while running the training or the experiments in your environment, or if you have any questions, please be patient and/or open an issue in this repository! I will try to address the issues as soon as possible.
+
 ### Acknowledgements
 
 The model and code extends [Score-Based Data Assimilation](https://github.com/francois-rozet/sda) by François Rozet et al.

@@ -8,7 +8,7 @@ The COSMO REA6 data has to be downloaded and saved in the `DATA_ROOT_DIR` direct
 
 #### 1. Extracting the spatial region
 <p align="center">
-<img src="./grid_points.png" width="300">
+  <img src="../assets/grid_points.png" width="300" />
 </p>
 
 The spatial region can be extracted using the `processing.py` script.

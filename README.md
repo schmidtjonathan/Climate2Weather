@@ -56,7 +56,7 @@ I am very interested in hearing your opinion!
 
 ## Convince yourself: load the trained model 💪
 
-To reproduce all results from the experiments, please download the pickled model (and/or the training state) from [here (huggingface)](https://huggingface.co/schmidtjonathan/C2W_model/tree/main) ➡️ `https://huggingface.co/schmidtjonathan/C2W_model/tree/main`
+To reproduce all results from the experiments by drawing your own samples, please download the pickled model (and/or the training state) from [here (huggingface)](https://huggingface.co/schmidtjonathan/C2W_model/tree/main) ➡️ `https://huggingface.co/schmidtjonathan/C2W_model/tree/main`
 
 Please feel encouraged to load the model and to use it for your own experiments! And do not hesitate to share your opinion or questions via e-mail or by opening an issue in this repository! Thank you!
 

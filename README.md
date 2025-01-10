@@ -21,9 +21,8 @@ Please find information on...
 
 ## Setup ⚙️
 
-> 👋 **Just a quick note before you start:**
+> 👋 **Just a quick note before you start:**<br>
 > I have tested the code
->
 > a) on a local linux machine with one NVIDIA 2080 and <br>
 > b) on a SLURM cluster using multiple NVIDIA {2080/A100} GPUs.<br>
 > Of course, even though I try to provide as much of an out-of-the-box setup, as possible, it is certainly possible that you encounter problems on your local machine/setup/cluster/...

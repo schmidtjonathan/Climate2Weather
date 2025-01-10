@@ -21,7 +21,6 @@ def run(
     devices: Optional[int] = None,
     **kwargs,
 ):
-
     torch.set_float32_matmul_precision("medium")
 
     devices = devices if devices is not None else "auto"
@@ -92,12 +91,11 @@ def _run_impl(
     batch_size: int = 16,
     # **absorb,
 ):
-
     run_timestamp = datetime.now().strftime("%Y-%m-%d_%H%M%S")
 
-    assert (
-        num_samples % fabric.world_size == 0
-    ), "num_samples must be divisible by world_size"
+    assert num_samples % fabric.world_size == 0, (
+        "num_samples must be divisible by world_size"
+    )
     num_samples_per_gpu = num_samples // fabric.world_size
 
     data_vars = list(sorted(data_vars))
@@ -290,7 +288,6 @@ def _run_impl(
 
 
 def sweep_likelihood_hparams(save_path, config_path, devices, trials, base_seed=99):
-
     set_random_seed(base_seed, 0)
 
     sigma_dist = np.logspace(-4, 0.2, 100)
@@ -306,7 +303,7 @@ def sweep_likelihood_hparams(save_path, config_path, devices, trials, base_seed=
             ([float(s) for s in cur_sigma_draw] + [float(cur_sigma_draw[-1])])
         )
         cur_gamma = float(np.random.choice(gamma_dist))
-        print(f"Trial {n+1}: sigma = {cur_sigma}, gamma = {cur_gamma}")
+        print(f"Trial {n + 1}: sigma = {cur_sigma}, gamma = {cur_gamma}")
         try:
             run(
                 save_path=save_path,
@@ -320,7 +317,7 @@ def sweep_likelihood_hparams(save_path, config_path, devices, trials, base_seed=
                 seed=base_seed,
             )
         except Exception as e:
-            print(f"Trial {n+1} failed: {e}")
+            print(f"Trial {n + 1} failed: {e}")
 
 
 if __name__ == "__main__":

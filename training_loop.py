@@ -44,7 +44,6 @@ def training_loop(
     cudnn_benchmark=True,
     logger=None,
 ):
-
     # Initialize.
     prev_status_time = time.time()
     util.set_random_seed(seed, fabric.global_rank)
@@ -143,7 +142,9 @@ def training_loop(
         granularity = (
             checkpoint_ndata
             if checkpoint_ndata is not None
-            else snapshot_ndata if snapshot_ndata is not None else batch_size
+            else snapshot_ndata
+            if snapshot_ndata is not None
+            else batch_size
         )
         slice_end_ndata = (
             (state.cur_ndata + slice_ndata) // granularity * granularity
@@ -217,7 +218,7 @@ def training_loop(
                 " +++ ".join(
                     [
                         "Status:",
-                        f"{state.cur_ndata} / {total_ndata} ({state.cur_ndata/total_ndata:.2%})",
+                        f"{state.cur_ndata} / {total_ndata} ({state.cur_ndata / total_ndata:.2%})",
                         f"{state.total_elapsed_time:.2f} sec total",
                         f"{cur_time - prev_status_time:.2f} sec/tick",
                         f"{cumulative_training_time / max(state.cur_ndata - prev_status_ndata, 1) * 1e3:.3f} sec/kdata",
@@ -239,7 +240,9 @@ def training_loop(
             ema_list = (
                 ema.get()
                 if ema is not None
-                else optimizer.get_ema(net) if hasattr(optimizer, "get_ema") else net
+                else optimizer.get_ema(net)
+                if hasattr(optimizer, "get_ema")
+                else net
             )
             ema_list = ema_list if isinstance(ema_list, list) else [(ema_list, "")]
 
@@ -254,7 +257,9 @@ def training_loop(
                     .requires_grad_(False)
                     .to(torch.float16)
                 )
-                fname = f"network-snapshot-{state.cur_ndata//1000:07d}{ema_suffix}.pkl"
+                fname = (
+                    f"network-snapshot-{state.cur_ndata // 1000:07d}{ema_suffix}.pkl"
+                )
                 fabric.print(f"Saving {fname} ... ", end="", flush=True)
                 with open(os.path.join(run_dir, fname), "wb") as f:
                     pickle.dump(snap_data, f)
@@ -353,7 +358,7 @@ def training_loop(
             checkpoint.save(
                 fabric,
                 os.path.join(
-                    run_dir, f"training-state-{state.cur_ndata//1000:07d}.ckpt"
+                    run_dir, f"training-state-{state.cur_ndata // 1000:07d}.ckpt"
                 ),
             )
 

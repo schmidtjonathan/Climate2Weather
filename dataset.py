@@ -88,9 +88,9 @@ class COSMODataset(AbstractSDADataset):
         assert self._h5_ds_shape[-1] == self._h5_ds_shape[-2] == spatial_res
         self.spatial_res = spatial_res
 
-        assert (
-            num_features == self.num_features
-        ), f"The number of specified features ({num_features}) does not match the number of features in the data ({self.num_features})."
+        assert num_features == self.num_features, (
+            f"The number of specified features ({num_features}) does not match the number of features in the data ({self.num_features})."
+        )
 
     def __len__(self) -> int:
         return self._h5_ds_shape[0] - self.window + 1

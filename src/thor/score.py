@@ -5,7 +5,6 @@ from tqdm.auto import trange
 
 
 class AbstractScoreFunction:
-
     def __init__(self, unet, noise_process, unet_kwargs=None):
         self.unet = unet
         self.noise_process = noise_process
@@ -62,7 +61,6 @@ class AbstractScoreFunction:
 
 
 class DefaultScoreFunction(AbstractScoreFunction):
-
     def __init__(self, unet, markov_order, **kwargs):
         super().__init__(unet=unet, **kwargs)
         self.markov_order = markov_order

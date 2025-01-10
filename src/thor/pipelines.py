@@ -74,7 +74,6 @@ class SDAPipeline:
             for t in tqdm(
                 time_steps[:-1], desc="Sampling", disable=not show_progressbar
             ):
-
                 # Predictor
                 x = self._sample_step(score_fn, x, t, dt, proc_x0=proc_x0)
 

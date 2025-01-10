@@ -9,6 +9,7 @@
 # https://github.com/NVlabs/edm2/blob/4bf8162f601bcc09472ce8a32dd0cbe8889dc8fc/dnnlib/util.py
 
 """Miscellaneous utility classes and functions."""
+
 import importlib
 import inspect
 import os

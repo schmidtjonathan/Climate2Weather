@@ -21,7 +21,6 @@ plt.rcParams.update({"figure.dpi": 150})
 
 
 def kde_and_pmf():
-
     N = 1000
 
     exp_dir = pathlib.Path("/path/to/experiments/run/")
@@ -500,7 +499,6 @@ def timeseries():
 
 
 def storm_grid():
-
     start_time = "2018-01-18-14"
     time_step = 1
     num_times = 7
@@ -669,7 +667,6 @@ def storm_grid():
 
 
 def climate_grid():
-
     dask_pbar = ProgressBar(minimum=5, dt=1.0)
     dask_pbar.register()
 
@@ -1289,7 +1286,6 @@ def _calc_windpower(exp_dir, single_location: tuple = None):
 
 
 def windpowers(rlat1=17, rlon1=17, rlat2=30, rlon2=30):
-
     wp_loc_dir = pathlib.Path("/path/to/experiments/run/metrics/windpower")
 
     _, gt_ds, obs_ds = exputil.setup(

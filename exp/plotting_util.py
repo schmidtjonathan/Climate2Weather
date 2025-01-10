@@ -152,7 +152,6 @@ def setup_animation(
     imshow_kwargs={},
     axfn=None,
 ):
-
     try:
         num_samples = samples.sizes["sample_id"]
     except KeyError:
@@ -487,7 +486,6 @@ def sandwich(
     border: int = 2,
     **kwargs,
 ):
-
     def arr2rgb(x, vmin=None, vmax=None):
         if vmin is None:
             vmin = x.min()

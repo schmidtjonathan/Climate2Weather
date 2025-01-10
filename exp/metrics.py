@@ -121,9 +121,9 @@ def melr(
     do_weighted: bool = False,
     do_max: bool = False,
 ):
-    assert (
-        int(do_weighted) + int(do_max) < 2
-    ), "At most one of do_weighted and do_max must be True"
+    assert int(do_weighted) + int(do_max) < 2, (
+        "At most one of do_weighted and do_max must be True"
+    )
 
     rapsd_path = pathlib.Path(rapsd_dir)
 
@@ -217,7 +217,6 @@ def ssim(sample_da, gt_da):
 
 
 def run(exp_dir):
-
     dask_pbar = ProgressBar(minimum=5, dt=1.0)
     dask_pbar.register()
 

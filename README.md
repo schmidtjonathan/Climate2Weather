@@ -18,6 +18,31 @@ Please find information on...
 
 ...below!
 
+
+## Setup ⚙️
+
+> 👋 **Just a quick note before you start:**
+> I have tested the code
+> a) on a local linux machine with one NVIDIA 2080
+> b) on a SLURM cluster using multiple NVIDIA {2080/A100} GPUs
+> Of course, even though I try to provide as much of an out-of-the-box setup, as possible, it is certainly possible that you encounter problems on your local machine/setup/cluster/...
+> Please let me know if you have suggestions/problems/solutions by opening an issue in this repository! Thank you!
+
+Please start by
+1. setting up the python environment
+```bash
+pip install -r requirements.txt
+```
+2. cloning this repository
+```bash
+git clone https://github.com/schmidtjonathan/Climate2Weather.git
+```
+3. and installing some basic functionalities
+```bash
+cd Climate2Weather
+pip install -e .
+```
+
 ## Have a look yourself: Climate-Informed Weather Dynamics 🌦️
 
 The downscaled climate simulations for the year 2014, which are evaluated in the paper, are accessible [here (huggingface)](https://huggingface.co/datasets/schmidtjonathan/C2W_downscaled-2014/tree/main) ➡️ `https://huggingface.co/datasets/schmidtjonathan/C2W_downscaled-2014`

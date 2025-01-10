@@ -2,7 +2,7 @@ Wouldn't it be nice, if you could...
 
 # Predict weather from climate
 
-This code accompanies the paper "Spatiotemporally Coherent Probabilistic Generation of Weather from Climate", which can be found [here (arXiv)](https://arxiv.org/abs/2412.15361) ➡️ `https://arxiv.org/abs/2412.15361`
+This code accompanies the paper **"Spatiotemporally Coherent Probabilistic Generation of Weather from Climate"**, which can be found [here (arXiv)](https://arxiv.org/abs/2412.15361) ➡️ `https://arxiv.org/abs/2412.15361`
 
 <p align="center">
   <img src="./assets/vas_storm.png" width="75%" />
@@ -29,22 +29,13 @@ I am very interested in hearing your opinion!
 
 
 
-## Convince yourself: load the trained model
+## Convince yourself: load the trained model 💪
 
 To reproduce all results from the experiments, please download the pickled model (and/or the training state) from [here (huggingface)](https://huggingface.co/schmidtjonathan/C2W_model/tree/main) ➡️ `https://huggingface.co/schmidtjonathan/C2W_model/tree/main`
 
 Please feel encouraged to load the model and to use it for your own experiments! And do not hesitate to share your opinion or questions via e-mail or by opening an issue in this repository! Thank you!
 
 ---
----
----
-
-
-
-## Disclaimer
-> December 19, 2024
-
-I am currently in the process of testing the code base on different platforms and in different environments. Should you encounter problems while running the training or the experiments in your environment, or if you have any questions, please be patient and/or open an issue in this repository! I will try to address the issues as soon as possible.
 
 ### Acknowledgements
 

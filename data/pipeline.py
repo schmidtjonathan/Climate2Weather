@@ -68,7 +68,6 @@ def analyze_nan(da):
 def load_and_process_single_var_ds(
     var_name, folder_path, start_time, num_hours, do_nan_check
 ):
-
     start_datetime = convert_to_datetime(start_time)
     end_datetime = start_datetime + timedelta(hours=num_hours - 1)
     print(f"Loading data for {var_name} from {start_datetime} to {end_datetime}")

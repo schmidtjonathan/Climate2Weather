@@ -58,7 +58,6 @@ def _analyze_nan(da):
 
 
 def full_cosmo_to_interpolated_patch(var_folder, out_folder, years=None):
-
     repo_path = os.environ.get("REPO_ROOT_DIR", None)
     if repo_path is None:
         raise RuntimeError("REPO_ROOT_DIR environment variable not set.")
@@ -66,9 +65,9 @@ def full_cosmo_to_interpolated_patch(var_folder, out_folder, years=None):
     patch_mask_path = repo_path / "data" / "COSMO_patch_index-ranges.npz"
 
     var_folder = pathlib.Path(var_folder)
-    assert (
-        var_folder.exists() and var_folder.is_dir()
-    ), f"{var_folder} is not a directory."
+    assert var_folder.exists() and var_folder.is_dir(), (
+        f"{var_folder} is not a directory."
+    )
     varname = var_folder.name
     print(var_folder)
     print(varname)
@@ -204,7 +203,6 @@ def merged_nc_to_normed_h5(
 
     h5_dataset = None
     with h5py.File(h5_out_file, "w") as f:
-
         f.create_dataset(
             "vars",
             data=data_vars,

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: Climate2Weather
+authors:
+- name: Jonathan Schmidt
+license: MIT
+url: "https://github.com/schmidtjonathan/Climate2Weather"
+preferred-citation:
+  type: generic
+  title: "Spatiotemporally Coherent Probabilistic Generation of Weather from Climate"
+  authors:
+  - family-names: Schmidt
+    given-names: Jonathan
+  - family-names: Schmidt
+    given-names: Luca
+  - family-names: Strnad
+    given-names: Felix
+  - family-names: Ludwig
+    given-names: Nicole
+  - family-names: Hennig
+    given-names: Philipp
+  year: 2024
+  url: "https://arxiv.org/abs/2412.15361"
+  identifiers:
+    - type: other
+      value: "arXiv:2412.15361"
+      description: The arXiv pre-print of the paper

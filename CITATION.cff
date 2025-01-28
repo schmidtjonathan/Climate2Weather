@@ -7,7 +7,7 @@ license: MIT
 url: "https://github.com/schmidtjonathan/Climate2Weather"
 preferred-citation:
   type: generic
-  title: "Spatiotemporally Coherent Probabilistic Generation of Weather from Climate"
+  title: "A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation"
   authors:
   - family-names: Schmidt
     given-names: Jonathan

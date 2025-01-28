@@ -2,7 +2,7 @@ Wouldn't it be nice, if you could...
 
 # Predict weather from climate
 
-This code accompanies the paper **"Spatiotemporally Coherent Probabilistic Generation of Weather from Climate"**, which can be found [here (arXiv)](https://arxiv.org/abs/2412.15361) ➡️ `https://arxiv.org/abs/2412.15361`
+This code accompanies the paper **"A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation"**, which can be found [here (arXiv)](https://arxiv.org/abs/2412.15361) ➡️ `https://arxiv.org/abs/2412.15361`
 
 <p align="center">
   <img src="./assets/vas_storm.png" width="75%" />

@@ -60,6 +60,20 @@ To reproduce all results from the experiments by drawing your own samples, pleas
 
 Please feel encouraged to load the model and to use it for your own experiments! And do not hesitate to share your opinion or questions via e-mail or by opening an issue in this repository! Thank you!
 
+
+## Citation
+
+If you find our code, results, model, data, etc. useful for your own endeavors, please consider citing our work:
+
+```
+@article{schmidt2024generative,
+  title={A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation},
+  author={Schmidt, Jonathan and Schmidt, Luca and Strnad, Felix and Ludwig, Nicole and Hennig, Philipp},
+  journal={arXiv preprint arXiv:2412.15361},
+  year={2024}
+}
+```
+
 ---
 
 ### Acknowledgements

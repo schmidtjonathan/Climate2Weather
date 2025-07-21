@@ -2,7 +2,7 @@ Wouldn't it be nice, if you could...
 
 # Predict weather from climate
 
-This code accompanies the paper **"A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation"**, which can be found [here (arXiv)](https://arxiv.org/abs/2412.15361) ➡️ `https://arxiv.org/abs/2412.15361`
+This code accompanies the paper **"A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation"**, which can be found [here](https://www.nature.com/articles/s41612-025-01157-y) ➡️ `https://www.nature.com/articles/s41612-025-01157-y`
 
 <p align="center">
   <img src="./assets/vas_storm.png" width="75%" />
@@ -66,11 +66,17 @@ Please feel encouraged to load the model and to use it for your own experiments!
 If you find our code, results, model, data, etc. useful for your own endeavors, please consider citing our work:
 
 ```
-@article{schmidt2024generative,
-  title={A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation},
-  author={Schmidt, Jonathan and Schmidt, Luca and Strnad, Felix and Ludwig, Nicole and Hennig, Philipp},
-  journal={arXiv preprint arXiv:2412.15361},
-  year={2024}
+@article{Schmidt2025,
+  author       = {Jonathan Schmidt and Luca Schmidt and Felix M. Strnad and Nicole Ludwig and Philipp Hennig},
+  title        = {A Generative Framework for Probabilistic, Spatiotemporally Coherent Downscaling of Climate Simulation},
+  journal      = {npj Climate and Atmospheric Science},
+  year         = {2025},
+  volume       = {8},
+  number       = {1},
+  pages        = {270},
+  doi          = {10.1038/s41612-025-01157-y},
+  url          = {https://doi.org/10.1038/s41612-025-01157-y},
+  issn         = {2397-3722}
 }
 ```
 
